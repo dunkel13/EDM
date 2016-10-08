@@ -13,7 +13,7 @@ colnames(CiuXNed)<-Ne
 rownames(CiuXNed)<-stad
 # Asigna los nombres a las columnas y filas de CiuXNed
 CC<-xtable(CiuXNed, Caption = "Nivel educativo de encuestados en la ECC por ciudades")
-# Asigna a CC la tabla de contingencias, que pueda ser impresa como una tabla LaTeX
+# Asigna a CC la tabla de contingencias, la cual pueda ser impresa como una tabla LaTeX
 print(CC)
 v<-c(rep(0,6))
 # Crea un vector de ceros
