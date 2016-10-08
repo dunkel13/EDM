@@ -10,3 +10,7 @@ colnames(CiuXNed)<-Ne
 rownames(CiuXNed)<-stad
 CC<-xtable(CiuXNed, Caption = "Nivel educativo de encuestados en la ECC por ciudades")
 print(CC)
+v<-c(rep(0,6))
+for(i in 1:6){v[i]<-sum(CC[,i])}
+# total suma por columnas
+print(v)
