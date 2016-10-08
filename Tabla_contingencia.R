@@ -20,3 +20,10 @@ v<-c(rep(0,6))
 for(i in 1:6){v[i]<-sum(CC[,i])}
 # Asigna a cada componente del vector el total de la suma por columnas
 print(v)
+F<-round(prop.table(CiuXNed),3)
+# prop.table <- Express Table Entries as Fraction of Marginal Table
+colnames(F)<-Ne
+rownames(F)<-stad
+frecs<-xtable(F, caption="Matriz F de frecuencias relativas", digts=c(3))
+# Asigna a frecs la tabla F de frecuencias relativas, que puede ser impresa como una tabla LaTeX
+print(frecs)
