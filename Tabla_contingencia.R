@@ -41,3 +41,35 @@ print(columns)
 colnames(CCperfilas)<-Ne 
 par(mfrow=c(2,4))
 for(j in 1:8){barplot(CCperfilas[j,], main=stad[j], ylim=c(0,0.55))}
+
+# Análisis por columnas
+
+resciu.ne<-CA(CiuXNed)
+# CA <- Performs Correspondence Analysis (CA) including supplementary row and/or column points.
+round(resciu.ne$col$coord[order(resciu.ne$col$coord[,1]),][,1:2],2)
+# Coordenadas factor 1 (eje x)
+round(resciu.ne$col$coord[order(resciu.ne$col$coord[,2]),][,1:2],2)
+# Coorednadas factor 2 (eje y)
+round(resciu.ne$col$contrib[order(-resciu.ne$col$contrib[,1]),][,1:2],2)
+# contribuciones  factor 1
+round(resciu.ne$col$contrib[order(-resciu.ne$col$contrib[,2]),][,1:2],2)
+# contribuciones factor 2
+round(resciu.ne$col$cos[order(-resciu.ne$col$cos2[,1]),],2)[,1:2]
+# cosenos cuadrados, modalidades mejor representadas  en el factor 1
+round(resciu.ne$col$cos[order(-resciu.ne$col$cos2[,2]),],2)[,1:2]
+# cosenos cuadrados, modalidades mejor representadas  en el factor 2
+
+# Análisis por filas
+
+round(resciu.ne$row$coord[order(resciu.ne$row$coord[,1]),][,1:2],2)
+# valores de coordenadas del factor 1 para las ciudades
+round(resciu.ne$row$coord[order(resciu.ne$row$coord[,2]),][,1:2],2)
+# valores de coordenadas del factor 2 para las ciudades
+round(resciu.ne$row$contrib[order(-resciu.ne$row$contrib[,1]),][,1:2],2)
+# valores de contribuciones del factor 1 para las ciudades
+round(resciu.ne$row$contrib[order(-resciu.ne$row$contrib[,2]),][,1:2],2)
+# valores de contribuciones del factor 2 para las ciudades
+round(resciu.ne$row$cos[order(-resciu.ne$row$cos2[,1]),][,1:2],2)
+# valores de cosenos cuadrados del factor 1 para las ciudades
+round(resciu.ne$row$cos[order(-resciu.ne$row$cos2[,2]),][,1:2],2)
+# valores de cosenos cuadrados del factor 2 para las ciudades
