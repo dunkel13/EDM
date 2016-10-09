@@ -30,8 +30,14 @@ print(frecs)
 
 CCperfilas<-round(prop.table(CiuXNed,1),4)
 filas<-xtable(CCperfilas, caption=c("Perfiles fila"), digits=4)
+# tabla perfiles fila
 print(filas)
 
 CCpercolumn<-round(prop.table(CiuXNed,2),4)
 columns<-xtable(CCpercolumn, caption=c("Perfiles columna"),digits=4)
+# tabla perfiles columna
 print(columns)
+
+colnames(CCperfilas)<-Ne 
+par(mfrow=c(2,4))
+for(j in 1:8){barplot(CCperfilas[j,], main=stad[j], ylim=c(0,0.55))}
