@@ -27,3 +27,11 @@ rownames(F)<-stad
 frecs<-xtable(F, caption="Matriz F de frecuencias relativas", digts=c(3))
 # Asigna a frecs la tabla F de frecuencias relativas, que puede ser impresa como una tabla LaTeX
 print(frecs)
+
+CCperfilas<-round(prop.table(CiuXNed,1),4)
+filas<-xtable(CCperfilas, caption=c("Perfiles fila"), digits=4)
+print(filas)
+
+CCpercolumn<-round(prop.table(CiuXNed,2),4)
+columns<-xtable(CCpercolumn, caption=c("Perfiles columna"),digits=4)
+print(columns)
