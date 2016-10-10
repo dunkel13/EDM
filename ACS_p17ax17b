@@ -1,5 +1,10 @@
 # ACS de las preguntas p17_a:  actúa conforme a la ley y p17_b: le queda fácil actuar conforme a la ley
 
+require(FactoMineR)
+# install.packages("FactoMineR")
+CCLatin <- read.csv2("Muestra_CC.csv", sep = ";")
+# lee el archivo Muestra_CC, que debe estar guardado en el directorio de trabajo
+CCLatin [CCLatin==""]<-NA
 p17ax17b<-table(CCLatin$p17_a,CCLatin$p17_b)
 p17ax17b<-p17ax17b[-1,-1]
 CAp17ax17b<-CA(p17ax17b)
