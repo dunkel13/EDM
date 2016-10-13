@@ -17,7 +17,7 @@ sort(res.sue$Best.partition)
 # La clasificacion en 8 grupos es la siguiente
 kmedia<-kmeans(x,8,nstart = 1000)
 print(kmedia$centers)
-# # A matrix of cluster centres
+# A matrix of cluster centres
 
 res.sueh<-NbClust(x,distance = "euclidean", min.nc=2,max.nc = 10,method = "kmeans", index="hartigan")
 # índice de Hartigan
