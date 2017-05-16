@@ -1,0 +1,117 @@
+\documentclass[12pt]{beamer}
+\usetheme{Copenhagen}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{eurosym} 
+
+
+\author{Fernando Moreno}
+\title{Dimensions of cultural consumption among tourists: Multiple correspondence analysis}
+
+\subtitle{Greg Richards, L. Andries Van der Ark}
+
+\logo{}
+
+\institute{Universidad Nacional de Colombia}
+
+\date{3 de Noviembre de 2016}
+
+\subject{}
+
+\setbeamercovered{transparent}
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+	\maketitle 	
+	\begin{center}
+	\hspace{1.5cm}
+	\tableofcontents
+    \end{center}
+	\clearpage
+	\section{Introducción}
+\begin{center}
+	\begin{flushleft}
+		Introducción \\		
+	\end{flushleft}
+\end{center}
+\begin{itemize}
+\item El turismo cultural es una modalidad de turismo que se enfoca en los aspectos culturales de un país o región.
+\item La creciente diversidad del turismo cultural hace que la promoción de 'cultura' a un mercado turístico indiferenciado sea problemática.
+\item La tendencia de los estudios previos ha sido unidimensional y concentrada en la clasificación de turistas.
+\item Se emplea ACM para visualizar las relaciones entre los turistas y los diferentes tipos de atracciones turísticas.
+\end{itemize} 
+\clearpage
+\section{Metodología}
+Metodología \\
+\begin{center}
+\begin{tabular*}{0.4875\textwidth}{|l | c | r |}
+	\hline
+	{\scriptsize fuente} & {\scriptsize ATLAS} \\ \hline {\scriptsize n} & {\scriptsize 12905} \\ \hline {\scriptsize fecha} & {\scriptsize 2004} \\ \hline {\scriptsize lugares} & {\scriptsize 130 ciudades en 24 países} \\ \hline {\scriptsize r-package} & {\scriptsize ca}\\
+	\hline 
+\end{tabular*}\\
+\end{center}
+\begin{flushleft}
+	\begin{tabular*}{0.923\textwidth}{ |l  l  c  c  r  r |}
+	\hline
+	{\scriptsize  Evento} & {\scriptsize  Per.} & {\scriptsize  Evento} & {\scriptsize  Per.} & {\scriptsize  Evento} & {\scriptsize  Per.} \\ \hline
+	{\tiny Museo (MU)} & {\scriptsize 49.5} & {\tiny Teatros (Th)} & {\scriptsize 13.7} & {\tiny CM Clásica (CM)} & {\scriptsize 5.4} \\ {\tiny Monumentos (MO)} & {\scriptsize 41.6} & {\tiny C artesanía (HC)} & {\scriptsize 18.7} & {\tiny Danza (Da)} & {\scriptsize 7.8} \\
+	{\tiny G arte (AG)} & {\scriptsize 19.2} & {\tiny Cine (Ci)} & {\scriptsize 17.2} & {\tiny F tradicionales (TF)} & {\scriptsize 17.8}	\\ {\tiny S religioso (RS)} & {\scriptsize 32.2} & {\tiny Concierto pop (PC)} & {\scriptsize 8.1} & & \\ {\tiny S histórico (HS)} & {\scriptsize 42.8} & {\tiny F. música global(WM)} & {\scriptsize 5.6} & &  \\ 
+	\hline 
+\end{tabular*}
+\end{flushleft}
+
+\clearpage
+\section{Resultados}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{fig1}
+	\caption{Gráfica del ACM}
+	\end{figure}
+\clearpage
+\begin{flushleft}
+	\begin{tabular*}{0.978\textwidth}{ |l  l  c  c  r  r |}
+		\hline
+		{\scriptsize Variable} & {\scriptsize Categoría} & {\scriptsize \hspace{1.5cm}\%} & {\scriptsize Variable} & {\scriptsize Categoría} & {\scriptsize \%} \\ \hline
+		{\scriptsize Género} & {\tiny Masculino} & {\scriptsize 48.7\%} & {\scriptsize Edad} & {\scriptsize $<$15} & {\scriptsize 1\%}\\
+		 {\tiny } & {\tiny Femenino} & {\scriptsize 51.3\%} & {\scriptsize } & {\scriptsize 16-19} & {\scriptsize 6.1\%}  \\
+		 {\scriptsize Ingreso} & {\scriptsize $<$\euro5000} & {\scriptsize 18.7\%} & {\scriptsize } & {\scriptsize 20-29} & {\scriptsize 30.5\%}\\ 
+		 {\tiny } & {\scriptsize \euro5001-\euro10000} & {\scriptsize 12.3\%} &  {\scriptsize } & {\scriptsize 30-39} & {\scriptsize 21.3\%} \\ 
+		 {\tiny } & {\scriptsize \euro10001-\euro20000} & {\scriptsize 13.8\%} & {\scriptsize } & {\scriptsize 40-49} & {\scriptsize 17.7\%} \\ 
+		 
+		 {\tiny } & {\scriptsize \euro20001-\euro30000} & {\scriptsize 14.6\%} & {\scriptsize } & {\scriptsize 50-59} & {\scriptsize 13.2\%} \\
+		 {\tiny } & {\scriptsize \euro30001-\euro40000} & {\scriptsize 12.8\%} & {\scriptsize } & {\scriptsize $>$60} & {\scriptsize 10.2\%}
+		 \\ {\tiny } & {\scriptsize \euro40001-\euro50000} & {\scriptsize 9.6\%} & {\scriptsize Tipo} & {\tiny Visita (City)} & {\scriptsize 16.4\%}\\
+		 {\tiny } & {\scriptsize \euro50001-\euro60000} & {\scriptsize 7\%} & {\scriptsize vacaciones} & {\tiny Cultural (Culture)} & {\scriptsize 18.6\%} \\
+		 {\tiny } & {\scriptsize $>$\euro60000} & {\scriptsize 11.2\%} & {\scriptsize} & {\tiny Ecoturismo (Eco)} & {\scriptsize 4.6\%}\\
+		 {\scriptsize Nivel} & {\tiny Primaria} & {\scriptsize 3.4\%}
+		   & {\scriptsize } & {\tiny Sol y playa (Sun)} & {\scriptsize 10\%}	\\
+		   {\scriptsize educativo} & {\tiny Secundaria} & {\scriptsize 23.9\%}
+		  & {\scriptsize } &{\tiny Itinerante (Tour)} & {\scriptsize 15.4\%}	\\
+		  {\scriptsize } & {\tiny Profesional} & {\scriptsize 17.2\%} & {\scriptsize } & {\tiny Salud (Health)} & {\scriptsize 3.8\%} 	\\
+		  {\scriptsize } & {\tiny Pregrado} & {\scriptsize 37\%}
+		  &  {\scriptsize } & {\tiny Otro (other)} & {\scriptsize 15.5\%} 	\\	
+		  {\scriptsize } & {\tiny Maestría o Doctorado} & {\scriptsize 18.5\%}
+		   &  &  & 	\\	
+		\hline 
+	\end{tabular*}
+\end{flushleft}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{fig2}
+	\caption{Figura 2}
+\end{figure}
+\section{Conclusión}
+\begin{center}
+	
+\end{center}
+	
+\end{document}
